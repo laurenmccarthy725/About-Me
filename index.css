@@ -24,7 +24,7 @@
 
 /* Navbar logo */
 .navbar-brand img {
-  height: 120px;
+  height: 120px !important;
   width: auto;
 }
 
@@ -62,6 +62,7 @@
 /* Headshot */
 .image-headshot {
   width: 300px;
+  margin-top: 20px;
 }
 
 /* Contact Button */
