@@ -42,10 +42,6 @@ body {
    ===================== */
 @media (max-width: 767px) {
 
-  /* Hide the decorative header image on mobile */
-  .header-bg-img {
-    display: none;
-  }
 
   /* White text on teal gradient background */
   .fw-light {
