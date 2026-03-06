@@ -16,6 +16,106 @@
         max-height: 280px;
         object-fit: contain;
       }
+
+      /* =====================
+         MOBILE RESPONSIVE
+         ===================== */
+      @media (max-width: 767px) {
+
+        /* Hide background header image */
+        .header-bg-img {
+          display: none;
+        }
+
+        /* Reset overlay positioning */
+        .headerimage {
+          position: static;
+        }
+
+        .centered {
+          position: static;
+          transform: none;
+          top: auto;
+          left: auto;
+          color: white;
+          padding: 24px 16px 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+        }
+
+        /* Headshot block: stack centered */
+        .leftcontent {
+          float: none;
+          width: 100%;
+          margin: 0 0 16px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          order: 1;
+        }
+
+        .image-headshot {
+          width: 160px;
+          border-radius: 50%;
+        }
+
+        .contactbutton {
+          margin-top: 12px;
+        }
+
+        /* Text block: stacks after headshot */
+        .mobile-text-block {
+          order: 2;
+          width: 100%;
+        }
+
+        /* Image grid: stacks last */
+        .imagegrid {
+          order: 3;
+          --num-cols: 2;
+          padding: 8px;
+          gap: 10px;
+          width: 100%;
+        }
+
+        /* White text on teal gradient background */
+        .fw-light {
+          color: white !important;
+          margin-top: 12px;
+          font-size: 1.4rem;
+        }
+
+        .fw-lighter {
+          color: white !important;
+          font-size: 0.95rem;
+          padding: 10px 4px;
+        }
+
+        /* Carousel */
+        .carousel-img {
+          max-height: 140px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          background-color: rgba(0,0,0,0.35);
+          border-radius: 50%;
+        }
+
+        /* Tighten page padding */
+        .container.py-2 {
+          padding-left: 8px !important;
+          padding-right: 8px !important;
+        }
+
+        section.py-2 {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
     </style>
 </head>
 
@@ -38,15 +138,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="Automations/Automations.html">Automations & Integrations</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="../Personal/">Personal</a>
-          </li> -->
-
             </ul>
-            <!-- <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
         </div>
     </div>
 </nav>
@@ -57,25 +149,32 @@
             <section class="py-2 text-center container">
                 <div class="headerimage">
                     <div class="row py-lg-5">
-                      <img src="homepage/headerimage2.png">
+                      <!-- Background image: hidden on mobile via .header-bg-img class -->
+                      <img class="header-bg-img" src="homepage/headerimage2.png">
                         <div class="centered">
-                            <div class="leftcontent"><img class="image-headshot" src="homepage/headshot1.png">
-                                <button class="contactbutton"><a href="mailto:laurenmccarthy725@gmail.com?subject=Hello, Lauren!">Contact Me</a></button>
+                            <!-- 1) Headshot + Contact button -->
+                            <div class="leftcontent">
+                              <img class="image-headshot" src="homepage/headshot1.png">
+                              <button class="contactbutton"><a href="mailto:laurenmccarthy725@gmail.com?subject=Hello, Lauren!">Contact Me</a></button>
                             </div>
                             
-                            <div class="col-lg-6 col-md-8 mx-auto"></div>
+                            <!-- 2) Text content (stacks below headshot on mobile) -->
+                            <div class="mobile-text-block col-lg-6 col-md-8 mx-auto">
                                 <h1 class="fw-light">Hi, I'm Lauren McCarthy<br><i>eCRM & Digital Manager</i></h1>
-                                    <p class="fw-lighter">
-                                     You've already seen my career and technical credentials in my resume — this is more about how and why I do it.<br><br>
+                                <p class="fw-lighter">
+                                  You've already seen my career and technical credentials in my resume — this is more about how and why I do it.<br><br>
 My work lives at the intersection of marketing strategy, data infrastructure, and the people who need both. Over the past 9+ years, I've found that the most valuable thing I bring to a team isn't any single platform or skill set — it's the ability to sit in a room with an IT architect and a brand manager and make sure we're solving the same problem. I'm the person teams call when something breaks — a data flow, an automation, a campaign that needs a hard look, an integration speaking the wrong language — and I don't just escalate; I dig in until I understand it. I'm the first to admit when something is outside my immediate knowledge, and the first to come back with the answer and potential solutions.<br><br>
 The work you'll find here — the dashboards, the automation builds, the campaigns — is the output. But what I'm most proud of is the infrastructure underneath it, the cross-functional alignment, and the innovation that resulted. And yes — I built this site too!<br><br>
-                                      </p>
-                                    <div class="imagegrid">
-                                        <a href="Analytics/analytics.html"><img src="homepage/Reporting.png"></a>
-                                        <a href="MarketingMedia/Media.html"><img src="homepage/Media.png"></a>
-                                        <a href="Automations/Automations.html"><img src="homepage/Automations.png"></a>
-                                        <a href="homepage/Lauren_McCarthy_Resume_2026.pdf" download><img src="homepage/Resume.png"></a>
-                                    </div>
+                                </p>
+                            </div>
+
+                            <!-- 3) Navigation image grid (stacks last on mobile) -->
+                            <div class="imagegrid">
+                                <a href="Analytics/analytics.html"><img src="homepage/Reporting.png"></a>
+                                <a href="MarketingMedia/Media.html"><img src="homepage/Media.png"></a>
+                                <a href="Automations/Automations.html"><img src="homepage/Automations.png"></a>
+                                <a href="homepage/Lauren_McCarthy_Resume_2026.pdf" download><img src="homepage/Resume.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>

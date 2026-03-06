@@ -1,5 +1,4 @@
 
-
 /* Layout */
 .headerimage {
   position: relative;
@@ -121,4 +120,90 @@
 /* Page background */
 body {
   background-image: linear-gradient(#156082, #2c3d43);
+}
+
+/* =====================
+   MOBILE RESPONSIVE
+   ===================== */
+@media (max-width: 767px) {
+
+  /* Hide the background header image on mobile */
+  .headerimage > img:first-child {
+    display: none;
+  }
+
+  /* Convert overlay layout to normal stacked flow */
+  .headerimage {
+    position: static;
+  }
+
+  .centered {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    color: white;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Stack: headshot + button first, then text, then image grid */
+  .leftcontent {
+    float: none;
+    width: auto;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-headshot {
+    width: 180px;
+    border-radius: 50%;
+  }
+
+  /* Text content block — stacks after headshot/button */
+  .col-lg-6.col-md-8.mx-auto {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  /* White text on teal background */
+  .fw-light {
+    color: white !important;
+    margin-top: 16px;
+  }
+
+  .fw-lighter {
+    color: white !important;
+  }
+
+  /* Image grid goes to 2 columns on mobile */
+  .imagegrid {
+    --num-cols: 2;
+    padding: 8px;
+    gap: 10px;
+  }
+
+  /* Carousel arrows visible on dark bg */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  /* Carousel images smaller on mobile */
+  .carousel-img {
+    max-height: 160px;
+  }
+
+  /* Tighten up section padding */
+  .container.py-2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
