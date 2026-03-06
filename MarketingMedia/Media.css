@@ -2,11 +2,6 @@
    CUSTOM STYLES
    ===================== */
 
-Page background
-body {
-  background-image: linear-gradient(#156082, #2c3d43);
-}
-
 /* Header image */
 .headerimage img {
   width: 100%;
@@ -40,14 +35,14 @@ body {
     display: none;
   }
 
-  /* White text on teal gradient background */
+  /* Keep dark text since background is light */
   .fw-light {
-    color: white !important;
+    color: #0D1317 !important;
     font-size: 1.6rem;
   }
 
   .fw-lighter {
-    color: white !important;
+    color: #0D1317 !important;
     font-size: 0.95rem;
   }
 
