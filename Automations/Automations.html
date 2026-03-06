@@ -28,7 +28,23 @@
       .navbar-nav .nav-link:hover {
         color: #b0bec5 !important;
       }
-</style>
+      .card-caption {
+        padding: 14px 16px;
+        background: #fff;
+        border-top: 1px solid #e9ecef;
+      }
+      .card-caption h6 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #0D1317;
+        margin-bottom: 6px;
+      }
+      .card-caption p {
+        font-size: 0.8rem;
+        color: #444;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
     </style>
 </head>
 
@@ -63,15 +79,15 @@
       <img class="header-bg-img" src="header1.png">
       <h1 class="fw-light">Automations & Technical Integrations</h1>
       <p class="fw-lighter">
-        The most interesting problems I’ve solved are the ones where there wasn’t a playbook.
+        The most interesting problems I've solved are the ones where there wasn't a playbook.
 <br><br>
-Much of the work here involved connecting platforms that weren’t designed to talk to each other and building data flows where none existed before. That meant getting comfortable with ambiguity, teaching myself new coding languages along the way, reading documentation that wasn’t written for marketers, and experimenting until something worked.
+Much of the work here involved connecting platforms that weren't designed to talk to each other and building data flows where none existed before. That meant getting comfortable with ambiguity, teaching myself new coding languages along the way, reading documentation that wasn't written for marketers, and experimenting until something worked.
 <br><br>
-Just as importantly, it meant collaborating closely with IT teams who understand the systems at a deeper level than I ever could. My role in those situations is often to explore what’s possible, prototype solutions, and then work alongside technical partners to make sure what we build is stable, secure, and sustainable.
+Just as importantly, it meant collaborating closely with IT teams who understand the systems at a deeper level than I ever could. My role in those situations is often to explore what's possible, prototype solutions, and then work alongside technical partners to make sure what we build is stable, secure, and sustainable.
 <br><br>
-What you’ll find here is a cross-section of that work: Journey Builder architectures, Automation Studio pipelines, custom Flowcode builds, and cross-platform integrations that didn’t exist before.
+What you'll find here is a cross-section of that work: Journey Builder architectures, Automation Studio pipelines, custom Flowcode builds, and cross-platform integrations that didn't exist before.
 <br><br>
-The screenshots show the builds. What they don’t show is the gap that sparked the innovation.</p>
+The screenshots show the builds. What they don't show is the gap that sparked the innovation.</p>
     </div>
   </div>
 </section>
@@ -84,14 +100,22 @@ The screenshots show the builds. What they don’t show is the gap that sparked 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 mb-5">
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="2.png">
+        <div class="card shadow-sm h-100">
+          <img src="2.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Multi-Branch Holiday Engagement Journey</h6>
+            <p>Large-scale holiday engagement journey built in Salesforce Marketing Cloud Journey Builder. Architected behavioral decision splits routing contacts based on open and click engagement, triggering product-specific email paths with timed sends across a multi-week campaign window.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="image01.png">
+        <div class="card shadow-sm h-100">
+          <img src="image01.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Holiday Engagement Journey (Prior Year)</h6>
+            <p>Prior-year holiday journey architecture demonstrating iterative design evolution — built with cascading engagement splits to deliver up to 8 personalized send paths per contact based on real-time open and click behavior. Designed to simultaneously accommodate non-openers, single-touch openers, and highly engaged segments within a single journey framework.</p>
+          </div>
         </div>
       </div>
 
@@ -102,26 +126,42 @@ The screenshots show the builds. What they don’t show is the gap that sparked 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 mb-5">
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="6.png">
+        <div class="card shadow-sm h-100">
+          <img src="6.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Welcome Series Automation Pipeline</h6>
+            <p>Automation Studio pipeline supporting a brand welcome series — a scheduled 2-step automation running daily to query and inject new subscribers into the welcome journey. Configured for continuous execution with consistent completion windows, ensuring zero-gap subscriber onboarding.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="3.png">
+        <div class="card shadow-sm h-100">
+          <img src="3.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Welcome Series Automation (Brand 2)</h6>
+            <p>Second in a suite of parallel brand welcome automations — built and maintained simultaneously to support scaled subscriber onboarding across multiple brands without cross-contamination of audience data.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="4.png">
+        <div class="card shadow-sm h-100">
+          <img src="4.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Welcome Series Automation (Brand 3)</h6>
+            <p>Third parallel welcome journey automation, part of a coordinated multi-brand onboarding infrastructure. Daily scheduled execution with sub-minute completion windows reflects optimized query and send configuration.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="5.png">
+        <div class="card shadow-sm h-100">
+          <img src="5.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Legacy Welcome Journey (Inherited & Updated)</h6>
+            <p>Inherited and re-owned legacy Automation Studio workflow, updated and maintained to support a separate audience segment with its own welcome journey cadence — demonstrating cross-channel audience management across both consumer and professional practitioner databases.</p>
+          </div>
         </div>
       </div>
 
@@ -132,20 +172,32 @@ The screenshots show the builds. What they don’t show is the gap that sparked 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="7.png">
+        <div class="card shadow-sm h-100">
+          <img src="7.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Giveaway Campaign Landing Page</h6>
+            <p>Custom landing page built for a giveaway campaign — capturing contact information and social handle for contest entry with simultaneous email list acquisition. Integrated consent language aligned with corporate privacy policy and CAN-SPAM compliance requirements.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="11.png">
+        <div class="card shadow-sm h-100">
+          <img src="11.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Product Campaign Landing Page</h6>
+            <p>Mobile-optimized brand page built to support retail and out-of-home campaign traffic. Integrated product imagery, video content, social links, and an email subscription CTA — serving as a post-scan conversion hub for offline-to-online audience capture.</p>
+          </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card shadow-sm">
-          <img src="10.png">
+        <div class="card shadow-sm h-100">
+          <img src="10.png" class="card-img-top">
+          <div class="card-caption">
+            <h6>Industry Conference Landing Page</h6>
+            <p>Custom landing page built for a professional trade show activation. Consolidated show specials, email newsletter signup, social links, event scheduling, and product education into a single mobile experience — designed specifically for a professional practitioner audience.</p>
+          </div>
         </div>
       </div>
 
