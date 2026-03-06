@@ -206,6 +206,11 @@ body {
     font-size: 1.4rem;
   }
 
+ .navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+ 
   .fw-lighter {
     color: white !important;
     font-size: 0.95rem;
